@@ -17,6 +17,8 @@
     This script uses 7zip to compress a specified folder and then splits the resulting
     archive into sections of 3GB or less. It will work (and was designed for) files larger than 3GB.Windows Defender Live Response currently only supports pulling back files of 3GB or less via the console. If your collection is larger than that you will need to repackage it using Ginsu, or use a method outside of the console to retrieve the files.
     Note that 7za works with binary units, so option -v3g will create archive of 3GiB (3221225472B) while Defender download limit is 3GB (3000000000B).
+#>
+
 # Directory to be Zipped
 $source = "C:\Temp\RESPONSE"
 # FileName for the output (no extension)
